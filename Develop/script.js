@@ -24,34 +24,34 @@ $(function () {
 
   // When you click the button corresponding to the each box, it'll save the input into localStorage.
   saveBtn9.on('click', function () {
-    localStorage.setItem("text9", time9.val());
+    localStorage.setItem("text9", time9.value());
   });
   saveBtn10.on('click', function () {
-    localStorage.setItem("text10", time10.val());
+    localStorage.setItem("text10", time10.value());
   });
   saveBtn11.on('click', function () {
-    localStorage.setItem("text11", time11.val());
+    localStorage.setItem("text11", time11.value());
   });
   saveBtn12.on('click', function () {
-    localStorage.setItem("text12", time12.val());
+    localStorage.setItem("text12", time12.value());
   });
   saveBtn1.on('click', function () {
-    localStorage.setItem("text1", time1.val());
+    localStorage.setItem("text1", time1.value());
   });
   saveBtn2.on('click', function () {
-    localStorage.setItem("text2", time2.val());
+    localStorage.setItem("text2", time2.value());
   });
   saveBtn3.on('click', function () {
-    localStorage.setItem("text3", time3.val());
+    localStorage.setItem("text3", time3.value());
   });
   saveBtn4.on('click', function () {
-    localStorage.setItem("text4", time4.val());
+    localStorage.setItem("text4", time4.value());
   });
   saveBtn5.on('click', function () {
-    localStorage.setItem("text5", time5.val());
+    localStorage.setItem("text5", time5.value());
   });
 
-  // Retrieves the value saved in localStorage and will add it to the corresponding text box.
+  // Retrieves the valueue saved in localStorage and will add it to the corresponding text box.
   $("#input9").text(localStorage.getItem("text9"));
   $("#input10").text(localStorage.getItem("text10"));
   $("#input11").text(localStorage.getItem("text11"));
