@@ -62,14 +62,82 @@ $(function () {
   $("#input4").text(localStorage.getItem("text4"));
   $("#input5").text(localStorage.getItem("text5"));
   
+  // Current time in military hours
+  var now = dayjs().format("H");
+  console.log(now);
 
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
+  // if statements to add or remove colors based on the current time.
+  if (now == 9) {
+    $("#1").removeClass("past future").addClass('present')
+  } else if (now > 9) {
+    $("#1").removeClass("present future").addClass('past')
+  } else if (now < 9) {
+    $("#1").removeClass("past present").addClass('future')
+  };
 
+  if (now == 10) {
+    $("#2").removeClass("past future").addClass('present')
+  } else if (now > 10) {
+    $("#2").removeClass("present future").addClass('past')
+  } else if (now < 10) {
+    $("#2").removeClass("past present").addClass('future')
+  };
 
+  if (now == 11) {
+    $("#3").removeClass("past future").addClass('present')
+  } else if (now > 11) {
+    $("#3").removeClass("present future").addClass('past')
+  } else if (now < 11) {
+    $("#3").removeClass("past present").addClass('future')
+  };
+
+  if (now == 12) {
+    $("#4").removeClass("past future").addClass('present')
+  } else if (now > 12) {
+    $("#4").removeClass("present future").addClass('past')
+  } else if (now < 12) {
+    $("#4").removeClass("past present").addClass('future')
+  };
+
+  if (now == 13) {
+    $("#5").removeClass("past future").addClass('present')
+  } else if (now > 13) {
+    $("#5").removeClass("present future").addClass('past')
+  } else if (now < 13) {
+    $("#5").removeClass("past present").addClass('future')
+  };
+
+  if (now == 14) {
+    $("#6").removeClass("past future").addClass('present')
+  } else if (now > 14) {
+    $("#6").removeClass("present future").addClass('past')
+  } else if (now < 14) {
+    $("#6").removeClass("past present").addClass('future')
+  };
+
+  if (now == 15) {
+    $("#7").removeClass("past future").addClass('present')
+  } else if (now > 15) {
+    $("#7").removeClass("present future").addClass('past')
+  } else if (now < 15) {
+    $("#7").removeClass("past present").addClass('future')
+  };
+
+  if (now == 16) {
+    $("#8").removeClass("past future").addClass('present')
+  } else if (now > 16) {
+    $("#8").removeClass("present future").addClass('past')
+  } else if (now < 16) {
+    $("#8").removeClass("past present").addClass('future')
+  };
+
+  if (now == 17) {
+    $("#9").removeClass("past future").addClass('present')
+  } else if (now > 17) {
+    $("#9").removeClass("present future").addClass('past')
+  } else if (now < 17) {
+    $("#9").removeClass("past present").addClass('future')
+  };
 
   // Displays the current date in the header of the page.
   var todayDate = dayjs();
